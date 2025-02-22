@@ -77,7 +77,7 @@ editor.addEventListener("keydown", (event) => {
     });
 })
 
-function executeFunction(fn) {
+async function executeFunction(fn) {
     if (typeof fn !== 'function') {
         throw new Error("Argument must be a function");
     }
@@ -90,7 +90,7 @@ function executeFunction(fn) {
         originalConsoleLog(...args);
     };
 
-    fn();
+    await fn();
 
     console.log = originalConsoleLog;
     return output.trim();

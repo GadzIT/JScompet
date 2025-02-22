@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
-    <title>Game 1</title>
+    <title>Game 4</title>
     <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
@@ -15,22 +15,28 @@
         </div>
         <div id="ins">
             <ul>
-                <li>make a code to write <code>"hello world"</code> on the console, you can open the console to check it out.</li>
+                <li>in the right side, there's a white board</li>
+                <li>the whiteboard's ID is <code>"frame"</code></li>
+                <li>inside the whiteboard, there are two elements</li>
+                <li>a <code>< span ></code> on top with the ID <code>"lps"</code></li>
+                <li>and a <code>< textarea /></code> with the ID <code>"wasteland"</code></li>
+                <li>I want a code that updates the <code>"lps"</code> whenever there's an input in <code>"wasteland"</code> so that it acts as "letters per second"</li>
             </ul>
         </div>
         <pre id="code"><code class="code-editor" contenteditable="true">// Your code here...</code></pre>
     </section>
     <section>
-        <div id="frame">
-
-        </div>
         <div></div>
+        <div id="frame">
+            <p><span id="lps">0</span> letters per second</p>
+            <textarea id="wasteland"></textarea>
+        </div>
     </section>
     <div id="simulate">Simulate</div>
 
     <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/languages/javascript.min.js"></script>
     <script src="../static/main.js"></script>
-    <script src="../static/game1.js"></script>
+    <script src="../static/game3.js"></script>
 </body>
 </html>
