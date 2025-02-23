@@ -90,7 +90,11 @@ async function executeFunction(fn) {
         originalConsoleLog(...args);
     };
 
-    await fn();
+    try{
+        await fn();
+    }catch(e){
+        alert(e);
+    }
 
     console.log = originalConsoleLog;
     return output.trim();
